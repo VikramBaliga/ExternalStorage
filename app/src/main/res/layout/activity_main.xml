@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="projects.android.my.externalstorage.MainActivity">
+
+    <Button
+        android:onClick="SaveImage"
+        android:id="@+id/saveImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:text="Save To External" />
+
+    <Button
+        android:onClick="LoadImage"
+        android:id="@+id/loadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Load From External" />
+
+    <ImageView
+        android:id="@+id/loadedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+</RelativeLayout>
